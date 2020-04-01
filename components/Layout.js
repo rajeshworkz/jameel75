@@ -14,7 +14,7 @@ const Layout = ({children, title}) => (
     <script src="static/js/jquery.inviewport.js"></script>
     <script src="static/js/globe/countries.js"></script>
     <script src="static/js/globe/miniature.earth.js"></script>
-    <script src="static/js/globe/custom.js"></script>
+    {/* <script src="static/js/globe/custom.js"></script> */}
     <script src="static/js/wow.min.js"></script>
     <script src="static/js/default.js"></script>
     

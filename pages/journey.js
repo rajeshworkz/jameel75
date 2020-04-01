@@ -14,14 +14,13 @@ import { Component } from "react";
 export default class stories extends Component {
   
   componentDidMount () {
-    // const script = document.createElement("script");
-    // script.src = "/static/js/stories/stories.js";
-    // script.type = 'text/javascript';
-    // script.async = true;
+    const script = document.createElement("script");
+    script.src = "/static/js/globe/custom.js";
+    script.type = 'text/javascript';
+    script.async = true;
 
-    // document.body.appendChild(script);
+    document.body.appendChild(script);
 }
-
 
 
   
@@ -122,7 +121,7 @@ flag="static/images/flags/ind.png"
     <div className="journey-detail-section">
         <div className="detail-header d-flex justify-content-end align-items-center">
                     <div className="share"><img src="static/images/icons/share.png" /></div>
-                    <div className="close" onclick="closeStory();"><img src="static/images/icons/close.png" /></div>
+                    <div className="close"><img src="static/images/icons/close.png" /></div>
                     
                 </div>
 

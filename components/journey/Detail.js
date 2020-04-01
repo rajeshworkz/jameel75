@@ -4,9 +4,9 @@ export default function Detail() {
     return (
     
                 
-               <div class="detail-scroll">
+               <div className="detail-scroll">
                 <h3>Hear from our Associates</h3>
-          <img src="static/images/future.jpg" class="img-fluid"/>
+          <img src="static/images/future.jpg" className="img-fluid"/>
                  
                 
                 
