@@ -175,8 +175,17 @@ h6{
     transition: all 1s ease;
     top: 50%;
     transform: translate(-50%, -50%);
+    
         
     
+}
+
+.stories-section h3{
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .stories-section.on{
@@ -191,7 +200,7 @@ h6{
     position: absolute;
     top: 0;
     right: -33%;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
     background: #fff;
 /*        right: 0;  */
 /*    overflow: hidden;*/
@@ -215,16 +224,34 @@ h6{
 .detail-scroll{
     overflow-y: scroll;
 /*    margin-top: 25px;*/
-    height: calc(100% - 100px);
+    height: calc(100% - 70px);
+}
+
+.detail-scroll h3{
+    margin-bottom: 25px;
+}
+.detail-scroll h4{
+    margin: 15px 0;
+}
+.detail-scroll p{
+    line-height: 1.2;
 }
 .detail-header{
-    height: 50px;
+    height: 40px;
     padding-right: 15px;
 }
+
+    
+
 .detail-header .close img{
     max-width: 16px;
     height: auto;
     cursor: pointer;
+}
+.detail-header .close,
+.detail-header .share{
+    display: flex;
+    align-items: center;
 }
 
 .detail-header .share img{
@@ -234,14 +261,19 @@ h6{
     cursor: pointer;
 }
 .detail-footer{
-        height: 50px;
-    padding: 0 10px;
+      height: 30px;
     border-top: 1px solid #ccc;
 }
 
+.detail-footer div{
+    display: flex;
+    align-items: center;
+}
+
 .detail-footer img{
-    max-width: 27px;
+     max-width: 25px;
     height: auto;
+    margin: 0 10px;
 }
 
 
@@ -253,10 +285,14 @@ h6{
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
-    margin-top: 15px;
+    
     padding: 5px 0;
 }
 
+
+.stories-page .stories-search{
+    margin-top: 15px;
+}
 .stories-search input{
        width: calc(100% - 54px);
     border: 0;
@@ -278,3 +314,150 @@ h6{
 
 
 
+
+.timeline-globe-switch{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    
+    
+}
+
+.timeline-globe-switch div{
+    margin-right: 15px;
+}
+
+.timeline-globe-switch .timeline-click.active{
+    text-decoration: underline;
+}
+
+.timeline-globe-switch .globe-click.active{
+    text-decoration: underline;
+}
+
+
+.year-col{
+    width: 120px;
+}
+.timeline-col{
+    height: 100%;
+    overflow-y: scroll;
+    width: 30%;
+    padding-right: 11px;
+    padding-left: 10px;
+}
+
+
+.globe-col{
+/*    background: #ccc;*/
+    width: 35%;
+    
+}
+
+.detail-col{
+    width: 35%;
+    height: 100%;
+}
+
+.journey-page{
+    overflow: hidden;
+}
+.journey-detail-section{
+    height: 100%;
+}
+
+
+.journey{
+    height: calc(100% - 48px);
+}
+
+
+
+
+
+.year-wrapper{
+    height: 100%;
+}
+
+
+.years-scroll{
+ width: 100px;
+    text-align: center;
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+}
+
+
+.years-scroll::-webkit-scrollbar,
+.timeline-col::-webkit-scrollbar {
+    display: none;
+}
+
+.years-scroll,
+.timeline-col {
+    -ms-overflow-style: none;
+
+}
+    
+
+
+.years-list{
+        border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.years-list.on{
+    background: #efefef;
+}
+
+
+.year-header,
+.year-footer{
+     background: #ccc;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+}
+
+.year-header img,
+.year-footer img{
+    width: 25px;
+    height: auto;
+}
+
+
+.detail-scroll h3{
+    font-size: 20px;
+}
+.detail-scroll h4{
+    font-size: 18px;
+}
+
+.timeline-title{
+    font-size: 16px;
+}
+
+
+.timeline .box h4,
+.timeline .box-footer a{
+    font-size: 16px;
+}
+
+.timeline-box p{
+    font-size: 16px;
+}
+
+
+.year-text{
+    font-size: 9px;
+}
+
+.years-list.active{
+    background: #ccc;
+}
+
+.box.active{
+    background: #ccc !important;
+    
+}

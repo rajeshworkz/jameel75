@@ -58,6 +58,10 @@
       .box-story:hover:after{
      opacity: 0;
       }
+
+.box-story.active::after{
+    opacity: 0;
+}
       
       
     .box-story .tooltiptext {
@@ -118,6 +122,14 @@
 
       
       
+      
+      .img-1,
+      .img-2,
+      .img-3,
+      .img-4,
+      .img-5,
+      .img-6,
+      .img-7,
       .img-8,
       .img-9,
       .img-10,
@@ -129,10 +141,12 @@
       .img-31,
       .img-41,
       .img-46,
-      .img-47,
       .img-48,
       .img-51,
+      .img-56,
+      .img-59,
       .img-60,
+      .img-61,
       .img-70,
       .img-75,
       .img-76,
@@ -153,7 +167,7 @@
 
 @media only screen and (max-width : 2560px) { .stories-actions-wrapper, .stories-actions {width: 800px;height: 800px;}}
 @media only screen and (max-width : 1920px) { .stories-actions-wrapper, .stories-actions {width: 600px;height: 600px;}}
-@media only screen and (max-width : 1440px) { .stories-actions-wrapper, .stories-actions {width: 500px;height: 500px;}}
-@media only screen and (max-width : 1366px) { .stories-actions-wrapper, .stories-actions {width: 400px;height: 400px;}}
+@media only screen and (max-width : 1440px) { .stories-actions-wrapper, .stories-actions {width: 400px;height: 400px;}}
+/*@media only screen and (max-width : 1366px) { .stories-actions-wrapper, .stories-actions {width: 400px;height: 400px;}}*/
 @media only screen and (max-width : 1280px) { .stories-actions-wrapper, .stories-actions {width: 350px;height: 350px;}}
-
+@media only screen and (max-width : 320px) { .stories-actions-wrapper, .stories-actions {width: 300px;height: 300px;}}

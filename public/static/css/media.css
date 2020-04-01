@@ -1,9 +1,19 @@
+
 @media only screen and (max-width : 1024px) {
+    .fixed-page {
+        height: calc(100vh - 265px);
+    }
     .alj-navbar .navbar .nav-link{
         font-size: 14px;
     }
 
 }
+
+@media screen and (max-width: 1024px) and (max-height: 600px) { 
+    .stories-page, .journey-page{height: calc(100vh - 100px);}
+}
+
+
 @media only screen and (max-width : 991px) {
  
 
@@ -87,6 +97,116 @@
         padding: 0 15px;
     }
     
+    
+    .journey-page{
+        height: calc(100vh - 235px);
+        overflow: hidden;
+    }
+    
+    .timeline-col{
+        width: 100%;
+        padding-right: 15px;
+    }
+    
+    
+    .globe-col,
+    .detail-col{
+        position: absolute;
+        right: -100%;
+        background: #fff;
+            transition: all 0.5s ease;
+        z-index: 9;
+        padding:0 15px;
+        height: 100%;
+        width: 100%;
+        
+    }
+    
+      .globe-col.on,
+    .detail-col.on{
+        right: 0;
+    }
+    
+    .globe-col.on{
+        height: 100%;
+        width: 100%;
+        
+    }
+    
+    .year-col{
+            width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    background: #fff;
+    }
+    .year-wrapper {
+    height: 50px;
+        position: relative;
+}
+    
+    
+    .years-scroll{
+        display: flex;
+        height: 50px;
+    width: calc(100% - 100px);
+    overflow-x: scroll;
+        margin: 0 auto;
+    }
+    
+    .year-header,
+    .year-footer{
+        width: 50px;
+        position: absolute;
+        height: 50px;
+        
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    }
+    
+       .year-header img,
+    .year-footer img{
+        
+              transform: rotate(270deg);
+    }
+    
+    .year-header{
+        left: 0;
+        top: 0;
+    }
+    
+    .year-footer{
+        right: 0;
+            top:0;
+    }
+    
+    
+    .years-list {
+    border: 0;
+    padding: 5px 10px;
+    border-left: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+    
+    
+    .years-list.on{
+        display: flex;
+    }
+    
+    
+    .year-text.on{
+/*        display: none;*/
+            width: 202px;
+    margin: 0 15px;
+    height: 25px;
+    overflow: hidden;
+    }
+    
+    
+    
 }
 @media only screen and (max-width : 767px) {
      .fixed-page{
@@ -134,6 +254,49 @@
     }
 */
     
+  .journey-page{
+        height: calc(100vh - 160px);
+    }
+    
+    
+    
+    
+    
+    .years-scroll,
+    .year-wrapper{
+        height: 25px;
+    }
+    
+    .years-scroll{
+            width: calc(100% - 50px);
+    }
+    
+    .year-header, .year-footer{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .year-header img, .year-footer img{
+        width: 16px;
+              transform: rotate(270deg);
+    }
+    
+    .years-list {
+    
+        padding: 5px 20px;
+    }
+    
+
+     .year-header img{
+        
+    }
+
+    
+    
+    
+    
+    
+    
     
     
 }
@@ -158,10 +321,9 @@
     font-size: 9px;
 }
     
-    
-    
-    
-    
-    
-    
+}
+@media only screen and (max-width : 380px) {
+.stories-section h3{
+ font-size: 16px;   
+}
 }

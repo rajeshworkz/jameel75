@@ -1,0 +1,167 @@
+@media only screen and (max-width : 1024px) {
+    .alj-navbar .navbar .nav-link{
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width : 991px) {
+ 
+
+   
+    
+    .header-logo .logo{
+        max-width: 220px;
+        
+    }
+    .landing-page .jameel-logo-top img {
+    margin: 15px 0;
+    }
+    
+    .landing-page .text img{
+        max-width:15px;
+        margin: 0 15px;
+    }
+    
+       .language {
+    margin-left: 25px;
+}
+    
+    
+ 
+    .language .globe{
+        display: none;
+    }
+    
+    .navbar-toggler{
+            border: 0;
+    margin-top: -30px;
+    position: relative;
+    top: -20px;
+    left: 0;
+        outline: none;
+         outline: 0;
+        box-shadow: none;
+    }
+    .navbar-toggler .burger-menu{
+        
+        max-width: 25px;
+    }
+    
+    .landing-page .text{
+        margin: 25px 0;
+    }
+    .landing-page .text p{
+        font-size: 12px;
+    }
+    
+    
+    .footer{
+        padding-bottom: 15px;
+    }
+    
+        .footer .navbar-nav .nav-link {
+    font-size: 12px;
+}
+    
+    
+
+}
+
+@media only screen and (max-width : 768px) {
+    
+    .stories-section.on{
+       left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+    .detail-header,
+    .detail-footer{
+        padding: 0;
+        background: #fff;
+    }
+    
+
+    .stories-detail-section{
+        width: 100%;
+        right: -100%;
+        padding: 0 15px;
+    }
+    
+}
+@media only screen and (max-width : 767px) {
+     .fixed-page{
+        height: auto;
+    }
+    
+    .title span{
+        width: 25px;
+    }
+    
+    .title  h1{
+        font-size: 25px;
+    }
+      .landing-page .text img{
+        margin: 0 10px;
+    }
+    
+    
+    .stories-page.on{
+/*        overflow: inherit;*/
+    }
+    
+
+    .stories-section,
+    .stories-section.on{
+    position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        margin: 25px auto;
+    }
+    
+    .stories-section h4{
+        font-size: 16px;
+    }
+/*
+        .stories-detail-section{
+        height: auto;
+            z-index: 1;
+    }
+    
+    .stories-scroll{
+        height: 100%;
+        overflow: auto;
+    }
+*/
+    
+    
+    
+}
+
+
+
+@media only screen and (max-width : 380px) {
+    .header-logo .logo {
+    max-width: 190px;
+}
+    
+    .header-logo .language-text {
+    font-size: 12px;
+}
+    
+    
+    .footer p {
+    font-size: 9px;
+}
+    
+    .footer .navbar-nav .nav-link {
+    font-size: 9px;
+}
+    
+    
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,134 @@
+
+.timeline {
+    position: relative;
+  /*  max-width: 40%;*/
+    margin: 0 auto;
+  /*    border:1px solid #ccc;*/
+  /*    border-top: 1px solid #ccc;*/
+  
+          
+  }
+  
+  
+  .timeline::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      background-color: #ccc;
+      top: 0;
+      bottom: 0;
+      right: 0px;
+  }
+  
+   
+  
+  .timeline-box {
+    padding: 25px 40px 35px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+      left: 0;
+      
+      
+  }
+  
+      
+  
+  .timeline-box::after {
+  content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -10px;
+      background-color: #EDECE9;
+      border: 1px solid #404140;
+      top: 50%;
+      border-radius: 50%;
+      z-index: 1;
+      margin-top: -10px;
+  }
+  
+  
+  
+  
+  
+  
+  .timeline-box::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 50%;
+      width: 10%;
+      z-index: 0;
+      right: 0;
+      border-top: 2px dotted #404140;
+  }
+  
+      
+      .timeline-title{
+            padding: 25px 40px 35px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+      left: 0;
+          text-align: right;
+      }
+      
+      .timeline-title::before{
+       content: " ";
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      z-index: 0;
+      right: -5px;
+      height: 6px;
+      background: #000;
+      margin-top: -8px;
+          z-index: 1;
+      }    
+  
+      .timeline-title .t-year {
+          color: #969BA5;
+      }
+  
+      
+      
+  /* The actual content */
+  .timeline .box {
+    padding: .5rem 0;
+  
+    position: relative;
+      border: 1px solid #000;
+      background: #Fff;
+      
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+   
+  }
+      
+      .timeline .box h4{
+          color: #979797;
+      }
+      .timeline .box .fw-img{
+          margin-bottom: 15px;
+      }
+      
+      .timeline .box-footer{
+          margin-top:15px;
+      }    
+      
+      .timeline .box-footer a{
+          color: #80A7BF;
+      }
+      
+      
+      .timeline .box-footer img{
+              width: 19px;
+      height: auto;
+      }
+      
+      .timeline p{
+          margin: 0;
+      }
+      

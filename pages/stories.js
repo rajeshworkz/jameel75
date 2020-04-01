@@ -1,15 +1,30 @@
 import React from "react";
 import Layout from "../components/Layout";
+// import "../public/static/js/stories/stories.js";
 import { Component } from "react";
 import Story from "../components/Story";
 import StoriesDetail from "../components/StoriesDetail";
 import fetch from "isomorphic-unfetch";
 
+
+
 export default class stories extends Component {
+  
+  componentDidMount () {
+    const script = document.createElement("script");
+    script.src = ["/static/js/stories/stories.js"];
+    script.type = 'text/javascript';
+    script.async = true;
+
+    document.body.appendChild(script);
+}
+
+
   static async getInitialProps() {
     const res = await fetch("https://jsonplaceholder.typicode.com/albums");
     const data = await res.json();
     console.log(data);
+    
     return { data };
   }
 
@@ -24,6 +39,7 @@ export default class stories extends Component {
       />
     ));
   };
+  
 
   render() {
     return (
