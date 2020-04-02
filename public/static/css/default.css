@@ -239,6 +239,10 @@ h6{
 }
 .detail-scroll p{
     line-height: 1.2;
+}
+.detail-scroll .anim-title,
+.detail-scroll .anim-subtite,
+    .detail-scroll .anim-text{
     padding-right: 15px;
 }
 .detail-header{
