@@ -63,7 +63,7 @@ export default class stories extends Component {
                   className="mask-75"
                 />
               </div>
-
+              <div className="search-wrapper">
               <div className="stories-search">
                 <div>
                   <form action="/action_page.php">
@@ -77,6 +77,75 @@ export default class stories extends Component {
                     </button>
                   </form>
                 </div>
+
+
+
+
+                <div className="search-result">
+ <div className="row search-list">
+     <div className="search-image">
+          <img src="static/images/stories/4.png" className="img-fluid" />
+     </div>
+     <div className="col p-0">
+     <h4>Paula Mendez</h4>   
+         <p>senior managing director</p>  
+     </div>
+     
+</div>
+     
+     
+      <div className="row search-list">
+     <div className="search-image">
+          <img src="static/images/stories/4.png" className="img-fluid" />
+     </div>
+     <div className="col p-0">
+     <h4>Paula Mendez</h4>   
+         <p>senior managing director</p>  
+     </div>
+     
+</div>
+     
+     
+      <div className="row search-list">
+     <div className="search-image">
+          <img src="static/images/stories/4.png" className="img-fluid" />
+     </div>
+     <div className="col p-0">
+     <h4>Paula Mendez</h4>   
+         <p>senior managing director</p>  
+     </div>
+     
+</div>
+     
+     
+      <div className="row search-list">
+     <div className="search-image">
+          <img src="static/images/stories/4.png" className="img-fluid" />
+     </div>
+     <div className="col p-0">
+     <h4>Paula Mendez</h4>   
+         <p>senior managing director</p>  
+     </div>
+     
+</div>
+     
+     
+      <div className="row search-list">
+     <div className="search-image">
+          <img src="static/images/stories/4.png" className="img-fluid" />
+     </div>
+     <div className="col p-0">
+     <h4>Paula Mendez</h4>   
+         <p>senior managing director</p>  
+     </div>
+     
+</div>
+ </div>
+                
+   
+
+
+              </div>
               </div>
             </div>
 

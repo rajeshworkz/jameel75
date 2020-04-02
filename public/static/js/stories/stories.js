@@ -1,5 +1,5 @@
 // $(document).ready(function () {
-    $(".box-story").click(function () {
+    $(".box-story, .search-list").click(function () {
         $(".stories-section").addClass("on");
         $(".stories-detail-section").addClass("on");
         $(".stories-page").addClass("on");
