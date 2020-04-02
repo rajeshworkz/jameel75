@@ -239,6 +239,7 @@ h6{
 }
 .detail-scroll p{
     line-height: 1.2;
+    padding-right: 15px;
 }
 .detail-header{
     height: 40px;
@@ -291,6 +292,7 @@ h6{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
     
     padding: 5px 0;
+    background: #fff;
 }
 
 
@@ -324,9 +326,10 @@ h6{
     
     .search-result{
        margin: 0 auto;
-    height: 150px;
+    max-height: 150px;
     background: white;
     overflow: scroll;
+    padding-top: 15px;
     }
     .search-list{
     height: 50px;
@@ -430,12 +433,16 @@ h6{
 
 
 .years-scroll::-webkit-scrollbar,
-.timeline-col::-webkit-scrollbar {
+.timeline-col::-webkit-scrollbar,
+.search-result::-webkit-scrollbar,
+.detail-scroll::-webkit-scrollbar {
     display: none;
 }
 
 .years-scroll,
-.timeline-col {
+.timeline-col,
+.search-result,
+.detail-scroll {
     -ms-overflow-style: none;
 
 }

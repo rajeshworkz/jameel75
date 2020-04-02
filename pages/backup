@@ -1,0 +1,169 @@
+// import React from "react";
+
+import Layout from "../components/Layout";
+import Year from '../components/journey/Year';
+import Title from '../components/journey/timeline/Title';
+import LeftImage from '../components/journey/timeline/LeftImage';
+import NoImage from '../components/journey/timeline/NoImage';
+import TopImage from '../components/journey/timeline/TopImage';
+import GlobeSection from '../components/journey/globe/GlobeSection';
+import Detail from '../components/journey/Detail';
+
+import { Component } from "react";
+import React, { useEffect, useState } from 'react'
+
+
+
+
+export default function stories() {
+  
+//   componentDidMount () {
+//     const script = document.createElement("script");
+//     script.src = "/static/js/globe/custom.js";
+//     script.type = 'text/javascript';
+//     script.async = true;
+
+//     document.body.appendChild(script);
+// }
+
+const [isComponentMounted, setIsComponentMounted] = useState(false)
+
+useEffect(() => setIsComponentMounted(true), [])
+
+if(!isComponentMounted) {
+  return null
+}
+
+  
+
+
+    return (
+      
+      <Layout>
+       <section className="container-fluid fixed-page journey-page p-0">
+        <div className="title"><span></span><h1>Journey</h1></div>
+        <div className="d-block d-lg-none">
+        <div className="timeline-globe-switch d-flex">
+        <div className="timeline-click active">TimeLine</div>
+        <div className="globe-click">Globe</div>
+        </div>
+            </div>
+ 
+        
+        
+<div className="journey d-flex justify-content-between p-0">
+
+<div className="year-col">
+
+
+<div className="year-wrapper">
+<div className="year-header">
+    
+<img src="static/images/icons/arrow-up.png" />    
+</div>            
+<div className="years-scroll">
+<Year year="1990"/>
+    <Year year="1992"/>
+    <Year year="1993"  description="hello world"/>
+    <Year year="1994"/>
+    <Year year="1995" /> 
+
+</div>                
+<div className="year-footer">
+    
+<img src="static/images/icons/arrow-down.png" />     
+</div>    
+ </div> 
+
+ 
+
+        
+</div>    
+    
+<div className="timeline-col">
+<div className="timeline">
+
+<Title
+title="Start of a journey"
+year="1990"
+/>
+
+<LeftImage
+title="Abdul Latif Jameel establish"
+description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+link="#"
+linktitle="ALJ News"
+image="https://dummyimage.com/200x200/bababa/737373"
+flag="static/images/flags/ind.png"
+/>
+
+<NoImage
+title="Abdul Latif Jameel establish"
+description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
+link="#"
+linktitle="ALJ News"
+flag="static/images/flags/ind.png"
+/>
+
+
+<TopImage
+title="Abdul Latif Jameel establish"
+description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
+link="#"
+linktitle="ALJ News"
+image="https://dummyimage.com/600x200/bababa/737373"
+flag="static/images/flags/ind.png"
+/>
+
+      
+ 
+
+</div>
+</div>    
+    
+    
+<div className="globe-col">
+    
+<GlobeSection />
+
+    </div>    
+    
+    
+    <div className="detail-col">
+    <div className="journey-detail-section">
+        <div className="detail-header d-flex justify-content-end align-items-center">
+                    <div className="share"><img src="static/images/icons/share.png" /></div>
+                    <div className="close"><img src="static/images/icons/close.png" /></div>
+                    
+                </div>
+
+            <Detail />
+
+
+                <div className="detail-footer d-flex justify-content-between align-items-center">
+                <div><img src="static/images/icons/prev.png" /> PREVIOUS</div>
+                <div>NEXT <img src="static/images/icons/next.png" /></div>
+                
+                </div>    
+        </div>
+
+
+
+
+    
+    </div>   
+    
+    
+        </div>
+        
+        
+        
+        
+        
+        
+</section>
+      
+      </Layout>
+    );
+  
+}

@@ -52,7 +52,7 @@ export default class stories extends Component {
 
           <div className="row">
             <div className="stories-section">
-              <h4>Click on the pictures below to see their storeis.</h4>
+              <h4 className="">Click on the pictures below to see their storeis.</h4>
               <div className="stories-actions-wrapper">
                 <div className="stories-actions d-flex flex-row flex-wrap align-items-center">
                   {this.renderData(this.props.data)}

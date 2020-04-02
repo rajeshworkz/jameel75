@@ -3,11 +3,29 @@
         $(".stories-section").addClass("on");
         $(".stories-detail-section").addClass("on");
         $(".stories-page").addClass("on");
+
+        animationRepeat();
+        // $(".anim-title").addClass("wow fadeInRight animated");
+        // $(".anim-image").addClass("wow fadeInRight animated");
+        // $(".anim-subtitle").addClass("wow fadeInRight animated");
+        // $(".anim-text").addClass("wow fadeInRight animated");
+        
+
       });
       $(".close").click(function () {
         $(".stories-section").removeClass("on");
         $(".stories-detail-section").removeClass("on");
         $(".stories-page").removeClass("on");
+
+        // $(".anim-title").removeClass("wow fadeInRight animated");
+        // $(".anim-image").removeClass("wow fadeInRight animated");
+        // $(".anim-subtitle").removeClass("wow fadeInRight animated");
+        // $(".anim-text").removeClass("wow fadeInRight animated");
+
+      });
+
+      $(".detail-footer div").click(function () {
+        animationRepeat();
       });
       mainAnim();
     // });
