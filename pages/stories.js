@@ -53,7 +53,7 @@ export default class stories extends Component {
           <div className="row">
             <div className="stories-section">
 
-              <div className="show-title">
+              <div className="show-title on">
               <h3 className="">Click on the pictures below to see their storeis.</h3>
               </div>
 

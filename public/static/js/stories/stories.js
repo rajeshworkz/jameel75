@@ -2,10 +2,10 @@
     $(".box-story, .search-list").click(function () {
         $(".stories-section").addClass("on");
         $(".stories-detail-section").addClass("on");
-        $(".stories-page").addClass("on");
+        
 
-        $(".show-title").hide();
-        $(".show-search").show();
+        $(".show-title").removeClass('on');
+        $(".show-search").addClass('on');
         animationRepeat();
         // $(".anim-title").addClass("wow fadeInRight animated");
         // $(".anim-image").addClass("wow fadeInRight animated");
@@ -17,9 +17,9 @@
       $(".close").click(function () {
         $(".stories-section").removeClass("on");
         $(".stories-detail-section").removeClass("on");
-        $(".stories-page").removeClass("on");
-        $(".show-search").hide();
-        $(".show-title").show();
+        
+        $(".show-search").removeClass('on');
+        $(".show-title").addClass('on')
         
 
         // $(".anim-title").removeClass("wow fadeInRight animated");

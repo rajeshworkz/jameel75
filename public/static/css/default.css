@@ -2,7 +2,7 @@ body{
     font-family: 'karbon';
     font-weight: 300;
     color: #404140;
-    overflow-x: hidden;
+    
 }
 
 hr{
@@ -172,8 +172,8 @@ h6{
 
 
 .stories-page{
-/*    overflow-x: hidden;*/
-    z-index: 1;
+   overflow-x: hidden;
+    /* z-index: 1; */
 }
 .stories-section{
     text-align: center;
@@ -309,8 +309,16 @@ h6{
     width: 100%;
     text-align: center;
 }
+
+.show-title.on{
+    display: block;
+}
 .show-search{
     display: none;
+}
+
+.show-search.on{
+    display: block;
 }
 
 

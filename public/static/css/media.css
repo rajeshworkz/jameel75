@@ -1,7 +1,7 @@
 
 @media only screen and (max-width : 1024px) {
     .fixed-page {
-        height: calc(100vh - 265px);
+        height: calc(100vh - 220px);
     }
     .alj-navbar .navbar .nav-link{
         font-size: 14px;
@@ -97,6 +97,19 @@
         padding: 0 15px;
     }
     
+.show-title.on,
+.show-search.on,
+.show-search{
+    display: block;
+}
+
+    .search-wrapper{
+        margin-top: -40px;
+    }
+
+    .show-title{
+        margin-top: -10px;
+    }
     
     .journey-page{
         height: calc(100vh - 235px);
@@ -236,7 +249,7 @@
         left: 0;
         top: 0;
         transform: translate(0, 0);
-        margin: 25px auto;
+        margin: 85px auto;
     }
     
     .stories-section h4{
@@ -324,6 +337,6 @@
 }
 @media only screen and (max-width : 380px) {
 .stories-section h3{
- font-size: 16px;   
+ font-size: 15px;   
 }
 }
