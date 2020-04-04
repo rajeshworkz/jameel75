@@ -54,6 +54,7 @@ hr{
 .footer{
     background-color:#EDECE9; 
     color: #969BA5;
+    padding-top: 10px;
 }
 
 .footer .social .icon{
@@ -65,14 +66,18 @@ hr{
     justify-content: center;
 }
 
-.footer .footer-top{
-    padding: 15px 0;
+.footer-top{
+    padding-top:10px;
+    background-color:#EDECE9; 
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
-.footer .footer-top a{
+.footer-top a{
     color: #969BA5;
 }
 
-.footer .footer-top .line{
+.footer-top .line{
 width: 1px;
     background: #969BA5;
     height: 15px;
@@ -116,12 +121,12 @@ h6{
 
 /****************/
 .fixed-page{
-    height: calc(100vh - 251px); 
+    height: calc(100vh - 207px); 
     position: relative;
 }
 
 .fixed-mob-page{
-    height: calc(100vh - 251px); 
+    height: calc(100vh - 207px); 
     position: relative;
 }
 .title{
@@ -225,6 +230,17 @@ h6{
         margin: 25px 0;
 }
 
+.stories-detail-section .hero-image{
+    height: 30%;
+    background-size: cover;
+
+    
+}
+
+
+.stories-detail-section  .hero-video video{
+    width: 100%;
+}
 .detail-scroll{
     overflow-y: scroll;
 /*    margin-top: 25px;*/
@@ -277,6 +293,7 @@ h6{
 .detail-footer div{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .detail-footer img{
@@ -286,9 +303,21 @@ h6{
 }
 
 
+.show-title{
+    position: absolute;
+    margin-top:-20px;
+    width: 100%;
+    text-align: center;
+}
+.show-search{
+    display: none;
+}
+
+
+
 .stories-search{
         
-     width: 80%;
+     width: 90%;
     margin: 0 auto;
     border-radius: 7px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
@@ -300,9 +329,17 @@ h6{
 }
 
 
-.stories-page .stories-search{
-    margin-top: 15px;
+.result-count{
+    text-align: left;
+    width: 100%;
+    color: #404140;
+    position: fixed;
+    padding-left: 15px;
+    margin-top: -27px;
 }
+
+    
+
 .stories-search input{
        width: calc(100% - 54px);
     border: 0;
@@ -326,21 +363,35 @@ h6{
     .search-wrapper{
         position: absolute;
         width: 100%;
+        z-index: 1;
+        margin-top: -20px;
     }
     
     .search-result{
-       margin: 0 auto;
-    max-height: 150px;
+        /* display: none; */
+        margin: 0 auto;
+    max-height: 270px;
     background: white;
     overflow: scroll;
-    padding-top: 15px;
+    position: relative;
+    margin-top: 25px;
     }
     .search-list{
-    height: 50px;
+    /* height: 50px;
     text-align: left;
     margin: 0px 5px;
+    padding: 20px 10px 10px 10px; */
     padding: 5px 10px;
+    align-items: center;
+    text-align: left;
+    margin: 0 5px;
+    cursor: pointer;
+
     }   
+
+    .search-list:hover{
+        background-color: #edece9;
+    }
     
     .search-image{
         width: 33px;
@@ -439,14 +490,12 @@ h6{
 /**remove scrollbar*/
 .years-scroll::-webkit-scrollbar,
 .timeline-col::-webkit-scrollbar,
-.search-result::-webkit-scrollbar,
 .detail-scroll::-webkit-scrollbar {
     display: none;
 }
 
 .years-scroll,
 .timeline-col,
-.search-result,
 .detail-scroll {
     -ms-overflow-style: none;
 

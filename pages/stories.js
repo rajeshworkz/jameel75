@@ -52,18 +52,14 @@ export default class stories extends Component {
 
           <div className="row">
             <div className="stories-section">
-              <h4 className="">Click on the pictures below to see their storeis.</h4>
-              <div className="stories-actions-wrapper">
-                <div className="stories-actions d-flex flex-row flex-wrap align-items-center">
-                  {this.renderData(this.props.data)}
-                </div>
 
-                <img
-                  src="static/images/stories/75mask.png"
-                  className="mask-75"
-                />
+              <div className="show-title">
+              <h3 className="">Click on the pictures below to see their storeis.</h3>
               </div>
+
+              <div className="show-search">
               <div className="search-wrapper">
+                
               <div className="stories-search">
                 <div>
                   <form action="/action_page.php">
@@ -82,6 +78,12 @@ export default class stories extends Component {
 
 
                 <div className="search-result">
+
+      
+<div className="result-count-wrapper">
+        <div className="result-count"><span>5</span> Rsults found</div>
+        </div>
+
  <div className="row search-list">
      <div className="search-image">
           <img src="static/images/stories/4.png" className="img-fluid" />
@@ -140,13 +142,58 @@ export default class stories extends Component {
      </div>
      
 </div>
+
+<div className="row search-list">
+     <div className="search-image">
+          <img src="static/images/stories/4.png" className="img-fluid" />
+     </div>
+     <div className="col p-0">
+     <h4>Paula Mendez</h4>   
+         <p>senior managing director</p>  
+     </div>
+     
+</div>
+
+
+<div className="row search-list">
+     <div className="search-image">
+          <img src="static/images/stories/4.png" className="img-fluid" />
+     </div>
+     <div className="col p-0">
+     <h4>Paula Mendez</h4>   
+         <p>senior managing director</p>  
+     </div>
+     
+</div>
  </div>
                 
    
 
 
               </div>
+              
+             
               </div>
+
+              
+
+              </div>
+
+
+
+
+
+              <div className="stories-actions-wrapper">
+                <div className="stories-actions d-flex flex-row flex-wrap align-items-center">
+                  {this.renderData(this.props.data)}
+                </div>
+
+                <img
+                  src="static/images/stories/75mask.png"
+                  className="mask-75"
+                />
+              </div>
+            
             </div>
 
             <div className="stories-detail-section">
@@ -162,6 +209,7 @@ export default class stories extends Component {
               <StoriesDetail
                 title="Hear from our Associates"
                 image="static/images/future.jpg"
+                video="http://localhost:3000/static/images/Jameel75_Landing_Page9.mp4"
                 subtitle="Peter Aberle"
                 description={
                   <p>
@@ -213,6 +261,10 @@ export default class stories extends Component {
               </div>
             </div>
           </div>
+
+
+
+          
         </section>
       </Layout>
     );

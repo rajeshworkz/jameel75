@@ -4,12 +4,7 @@ export default function Footer() {
     return (
         <section className="container-fluid footer">
         <div className="">
-            <div className="footer-top d-flex justify-content-center align-items-center">
-                <div><a href="#">Chairman’s Message</a></div>
-                <div><span className="line"></span></div>
-                <div><a href="#">About Our Founder</a></div>
-
-            </div>
+     
 
         <div className="row">
 

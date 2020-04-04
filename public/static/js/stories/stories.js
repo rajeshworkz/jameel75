@@ -4,6 +4,8 @@
         $(".stories-detail-section").addClass("on");
         $(".stories-page").addClass("on");
 
+        $(".show-title").hide();
+        $(".show-search").show();
         animationRepeat();
         // $(".anim-title").addClass("wow fadeInRight animated");
         // $(".anim-image").addClass("wow fadeInRight animated");
@@ -16,6 +18,9 @@
         $(".stories-section").removeClass("on");
         $(".stories-detail-section").removeClass("on");
         $(".stories-page").removeClass("on");
+        $(".show-search").hide();
+        $(".show-title").show();
+        
 
         // $(".anim-title").removeClass("wow fadeInRight animated");
         // $(".anim-image").removeClass("wow fadeInRight animated");

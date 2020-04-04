@@ -32,8 +32,8 @@ export default function index() {
             <div className="col-md-5 order-1 order-md-2">
             
             <div className="video">
-  <video width="320" height="" muted=""  loop="">
-  <source src="static/images/Jameel75_Landing_Page9.mp4" type="video/mp4" /> 
+  <video width="320" height="" muted=""  loop="" autoPlay>
+  <source src="http://localhost:3000/static/images/Jameel75_Landing_Page9.mp4" type="video/mp4" /> 
 </video> 
     </div>
             
@@ -70,13 +70,23 @@ export default function index() {
             <div className="community-logo-bottom text-center w-100"><img src="static/images/75_community_jameel_logo_en.png" /></div>
         </div>
         
+        <div className="footer-top d-flex justify-content-center align-items-center">
+                <div><a href="#">Chairman’s Message</a></div>
+                <div><span className="line"></span></div>
+                <div><a href="#">About Our Founder</a></div>
+
+            </div>
+
         </div>
         
-
+      
 
 
 
 </section>
+
+
+
 
 
 
