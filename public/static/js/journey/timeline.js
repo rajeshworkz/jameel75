@@ -32,6 +32,15 @@ $(".timeline-box").click(function(){
  });
      
      
+ $(".fliter-click").click(function(){
+     
+    $(".filters").toggleClass("on");
+     
+ });
+     
+
+
+     
  $(".years-list").click(function(){
     
      

@@ -465,6 +465,38 @@ h6{
     
 }
 
+
+.filter-wrapper{
+    position: absolute;
+}
+
+.fliter-click{
+    width: 22px;
+    cursor: pointer;
+}
+
+.filters{
+    position: absolute;
+    width: 200px;
+    background: #f9f9f9;
+    top: 0;
+    left: 26px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 11;
+    display: none;
+
+}
+
+.filters.on{
+    display: block;
+}
+.filters div{
+    border-bottom: 1px solid #ccc;
+}
+.filters label{
+    width: 150px;
+}
 .detail-col{
     width: 35%;
     height: 100%;

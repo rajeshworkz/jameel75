@@ -1,12 +1,46 @@
-import React from 'react'
+// import React from 'react'
+import React, { useState } from 'react';
+
 
 export default function Detail() {
+
+
     return (
     
                 
                <div className="detail-scroll">
                 <h3>Hear from our Associates</h3>
-          <img src="static/images/future.jpg" className="img-fluid"/>
+
+
+
+
+                <div id="myCarousel" className="carousel slide" data-ride="carousel" data-interval="false">
+    
+    <ol className="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      
+    </ol>
+
+    
+    <div className="carousel-inner" role="listbox">
+
+      <div className="item active">
+      <img src="static/images/future.jpg" className="img-fluid"/>
+      </div>
+
+  
+
+  
+    </div>
+    </div>
+
+
+
+
+
+      
                  
                 
                 
