@@ -383,6 +383,11 @@ h6{
     overflow: scroll;
     position: relative;
     margin-top: 25px;
+    display: none;
+    }
+
+    .search-result.on{
+        display: block;
     }
     .search-list{
     /* height: 50px;
@@ -514,6 +519,7 @@ h6{
 .years-list{
         border-bottom: 1px solid #ccc;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .years-list.on{

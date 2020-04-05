@@ -1,6 +1,5 @@
 import React from 'react'
-import Globe from '../globe/Globe';
-import Test from '../../../pages/test';
+
 
 export default function GlobeSection() {
 

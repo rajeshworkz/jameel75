@@ -58,6 +58,7 @@ export default class stories extends Component {
               </div>
 
               <div className="show-search">
+                
               <div className="search-wrapper">
                 
               <div className="stories-search">
@@ -81,7 +82,7 @@ export default class stories extends Component {
 
       
 <div className="result-count-wrapper">
-        <div className="result-count"><span>5</span> Rsults found</div>
+        <div className="result-count"><span>5</span> result found</div>
         </div>
 
  <div className="row search-list">
