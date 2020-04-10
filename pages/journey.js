@@ -1,12 +1,10 @@
 import React,{Component} from "react";
 import Layout from "../components/Layout";
 import Year from '../components/journey/Year';
-import Title from '../components/journey/timeline/Title';
-import LeftImage from '../components/journey/timeline/LeftImage';
-import NoImage from '../components/journey/timeline/NoImage';
-import TopImage from '../components/journey/timeline/TopImage';
+
 import GlobeSection from '../components/journey/globe/GlobeSection';
 import Detail from '../components/journey/Detail';
+import Tl from './Tl';
 
 
 
@@ -239,11 +237,43 @@ render(){
 <img src="static/images/icons/arrow-up.png" />    
 </div>            
 <div className="years-scroll">
-<Year year="1990"/>
+
+
+
+    <Year year="1970"/>  
+    <Year year="1971"/>
+    <Year year="1972"  description="hello world"/>
+    <Year year="1973"/>
+    <Year year="1974" /> 
+    <Year year="1975" /> 
+    <Year year="1976" /> 
+    <Year year="1977" /> 
+    <Year year="1978" /> 
+    <Year year="1979" /> 
+
+
+    <Year year="1980"/>
+    <Year year="1981"/>
+    <Year year="1982"  description="hello world"/>
+    <Year year="1983"/>
+    <Year year="1984" /> 
+    <Year year="1985" /> 
+    <Year year="1986" /> 
+    <Year year="1987" /> 
+    <Year year="1988" /> 
+    <Year year="1989" /> 
+
+    <Year year="1990"/>  
     <Year year="1991"/>
     <Year year="1992"  description="hello world"/>
     <Year year="1993"/>
     <Year year="1994" /> 
+    <Year year="1995" /> 
+    <Year year="1996" /> 
+    <Year year="1997" /> 
+    <Year year="1998" /> 
+    <Year year="1999" /> 
+
 
 </div>                
 <div className="year-footer">
@@ -260,135 +290,43 @@ render(){
 <div className="timeline-col">
 <div className="timeline">
 
-<Title
-title="Start of a journey"
-year="1990"
-/>
-
-<LeftImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-link="#"
-linktitle="ALJ News"
-image="https://dummyimage.com/200x200/bababa/737373"
-flag="static/images/flags/ind.png"
-/>
-
-<NoImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-flag="static/images/flags/ind.png"
-/>
+   <Tl year="1970" />
+   <Tl year="1971" />
+   <Tl year="1972" />
+   <Tl year="1973" />
+   <Tl year="1974" />
+   <Tl year="1975" />
+   <Tl year="1976" />
+   <Tl year="1977" />
+   <Tl year="1978" />
+   <Tl year="1979" />
 
 
-<TopImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-image="https://dummyimage.com/600x200/bababa/737373"
-flag="static/images/flags/ind.png"
-/>
-
-<NoImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-flag="static/images/flags/ind.png"
-/>
-      
- 
-
-
-<Title
-title="Start of a journey"
-year="1991"
-/>
-
-<LeftImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-link="#"
-linktitle="ALJ News"
-image="https://dummyimage.com/200x200/bababa/737373"
-flag="static/images/flags/ind.png"
-/>
-
-<NoImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-flag="static/images/flags/ind.png"
-/>
-
-
-<TopImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-image="https://dummyimage.com/600x200/bababa/737373"
-flag="static/images/flags/ind.png"
-/>
-
-<NoImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-flag="static/images/flags/ind.png"
-/>
-      
- 
+   <Tl year="1980" />
+   <Tl year="1981" />
+   <Tl year="1982" />
+   <Tl year="1983" />
+   <Tl year="1984" />
+   <Tl year="1985" />
+   <Tl year="1986" />
+   <Tl year="1987" />
+   <Tl year="1988" />
+   <Tl year="1989" />
 
 
 
-
-<Title
-title="Start of a journey"
-year="1992"
-/>
-
-<LeftImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-link="#"
-linktitle="ALJ News"
-image="https://dummyimage.com/200x200/bababa/737373"
-flag="static/images/flags/ind.png"
-/>
-
-<NoImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-flag="static/images/flags/ind.png"
-/>
+   <Tl year="1990" />
+   <Tl year="1991" />
+   <Tl year="1992" />
+   <Tl year="1993" />
+   <Tl year="1994" />
+   <Tl year="1995" />
+   <Tl year="1996" />
+   <Tl year="1997" />
+   <Tl year="1998" />
+   <Tl year="1999" />
 
 
-<TopImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-image="https://dummyimage.com/600x200/bababa/737373"
-flag="static/images/flags/ind.png"
-/>
-
-<NoImage
-title="Abdul Latif Jameel establish"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
-link="#"
-linktitle="ALJ News"
-flag="static/images/flags/ind.png"
-/>
-      
- 
 
 
 

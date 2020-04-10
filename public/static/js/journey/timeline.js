@@ -1,4 +1,5 @@
                 
+
 function timelineFun(){
 $(".timeline-box").click(function(){
     $(".detail-col").addClass("on");
@@ -41,45 +42,70 @@ $(".timeline-box").click(function(){
 
 
      
- $(".years-list").click(function(){
+   
+
+
+
+
+ 
+ 
+ 
+
+
+
+// $('.timeline-col').scroll(function(){
+//   var scrollPos = $('.timeline-col').scrollTop();
+//   // console.log(scrollPos);
+
+//   if(scrollPos < 10000) {  
+ 
+//     // scrollYears();
     
-     
-     console.log("years clicked");
-     
- $('.timeline-col').animate({
- scrollTop: $('.timeline-title.'+$(this).data("year")).offset().top - 130},
- 'slow');
-         
- });    
+//   }else{
+       
+//   }
+
+
+// $(".years-list.active")[0].scrollIntoView({
+//   behavior: "smooth", // or "auto" or "instant"
+//   block: "start" // or "end"
+// });
+
+  
+// });
 
 
 
-  
-    
-    
-$(".timeline-col").on('resize scroll',function() {
-
-    $('.timeline .timeline-title').each(function() {
-        
-           if($(this).inViewport('-100')) {              
-                    $(this).addClass("active");    
-                  $('.'+$(this).data("year")).addClass("active");             
-               
-                  console.log("scroll");
-  //               $('.years-scroll').animate({
-  //                scrollTop: $('.years-list.active').offset().top},
-  //                'slow');
-               
-           }else{
-               $('.'+$(this).data("year")).removeClass("active"); 
-               $(this).removeClass("active");    
-        
-           }
-  
-  
-    });
-  
+$(".years-list").click(function(){
+  $(".timeline-title."+$(this).data("year"))[0].scrollIntoView({
+    behavior: "smooth", 
+    block: "start" 
   });
+}); 
+   
+
+var scrollTimer;    
+$(".timeline-col").on('scroll',function(e) {
+  clearTimeout(scrollTimer);
+  scrollTimer=setTimeout(function(){afterScroll()},500);
+  function afterScroll(){
+    if($(".years-list").hasClass("active")){
+$(".years-list.active")[0].scrollIntoView({
+  behavior: "smooth", 
+  block: "center" 
+});
+}
+}
+$('.timeline .timeline-title').each(function() {
+if($(this).inViewport('-100')) {              
+$(this).addClass("active");    
+$('.'+$(this).data("year")).addClass("active");     
+ }else{
+$('.'+$(this).data("year")).removeClass("active"); 
+$(this).removeClass("active");         
+}
+ });
+});
 
 }
     

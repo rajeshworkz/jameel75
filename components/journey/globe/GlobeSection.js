@@ -42,7 +42,10 @@ export default function GlobeSection() {
       <button className="btn" type="submit"><img src="static/images/icons/search.png" width="17" height="17" /></button>
     </form>
   </div></div><div id="earth-col"><div id="element" className="little-earth"></div></div>
+ 
   <div id="globe-slider" className="globe-slider carousel slide" data-ride="carousel" data-interval="false">
+ 
+ 
   <div className="carousel-inner">
     <div className="carousel-item globe-slider-item active">
       <div className="row m-0">

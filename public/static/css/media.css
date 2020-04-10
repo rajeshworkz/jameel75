@@ -145,7 +145,24 @@
         width: 100%;
         
     }
+
+    .journey{
+        height: 100vh;
+    }
+
+
+    .header-logo{
+        /* position: fixed;
+        z-index: 9;
+        width: 100%; */
+
+    }
     
+
+    .footer{
+        position: fixed;
+        bottom: -100px;
+    }
     .year-col{
             width: 100%;
     position: absolute;
@@ -156,6 +173,7 @@
     .year-wrapper {
     height: 50px;
         position: relative;
+
 }
     
     
@@ -211,11 +229,16 @@
     
     
     .year-text.on{
-/*        display: none;*/
-            width: 202px;
+
     margin: 0 15px;
     height: 25px;
     overflow: hidden;
+    }
+
+
+    .year-col{
+        position: fixed;
+        bottom: 100px;
     }
     
     
